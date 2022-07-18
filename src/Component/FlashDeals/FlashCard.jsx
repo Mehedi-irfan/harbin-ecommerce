@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState } from 'react';
 import Slider from "react-slick";
 
 const NextArrow = (props) => {
@@ -24,7 +25,12 @@ const PrevArrow = (props) => {
 }
 
 
-function FlashCard({ cartItem }) {
+function FlashCard({ cartItem, addToCart }) {
+    const [count, setCount] = useState(0);
+
+    const increment = () => {
+        setCount(count + 1)
+    }
     const settings = {
         dots: false,
         infinite: true,
@@ -38,7 +44,8 @@ function FlashCard({ cartItem }) {
         <>
             <Slider {...settings}>
                 {
-                    cartItem.map((item) => {
+                    cartItem?.map((item) => {
+
                         return (
                             <div className="box">
                                 <div className="product mtop">
@@ -46,8 +53,8 @@ function FlashCard({ cartItem }) {
                                         <span className='discount'> {item.discount}% Off</span>
                                         <img src={item.cover} alt="" />
                                         <div className="product-like">
-                                            <label>0</label> <br />
-                                            <i className="fa-regular fa-heart"></i>
+                                            <label>{count}</label> <br />
+                                            <i className="fa-regular fa-heart" onClick={increment}></i>
                                         </div>
                                     </div>
                                     {/* product detals  */}
@@ -63,7 +70,7 @@ function FlashCard({ cartItem }) {
                                         </div>
                                         <div className="price">
                                             <h4>${item.price}.00</h4>
-                                            <button>
+                                            <button onClick={() => addToCart(cartItem)}>
                                                 <i className="fa fa-plus"></i>
                                             </button>
                                         </div>

@@ -30,16 +30,17 @@ const data = [
     {
         id: 5,
         discount: 50,
-        cover: '../../images/flash/flash-5.png',
+        cover: '../../images/flash/flash-2.png',
         name: 'Shoes',
         price: '100'
     },
     {
         id: 6,
         discount: 50,
-        cover: '../../images/flash/flash-6.png',
+        cover: '../../images/flash/flash-4.png',
         name: 'Shoes',
         price: '100'
     }
 ]
 
+export default data;

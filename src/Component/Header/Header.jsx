@@ -4,11 +4,11 @@ import NavBar from './NavBar'
 import Search from './Search';
 import './Header.css';
 
-function Header() {
+function Header({ productItem }) {
     return (
         <>
             <Head />
-            <Search />
+            <Search productItem={productItem} />
             <NavBar />
         </>
     )

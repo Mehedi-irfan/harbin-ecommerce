@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-function Search() {
+function Search({ productItem }) {
 
     window.addEventListener('scroll', function () {
         const search = document.querySelector('.search');
@@ -28,7 +28,9 @@ function Search() {
                         <div className="cart">
                             <Link to='/cart'>
                                 <i className="fa fa-shopping-bag icon-circle"></i>
-                                <span>0</span>
+                                <span>{productItem?.length === 0 ? '0' : productItem?.length}
+
+                                </span>
                             </Link>
                         </div>
                     </div>

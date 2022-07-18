@@ -1,7 +1,7 @@
 import React from 'react'
 import FlashCard from './FlashCard'
 
-function FlashDeals({ cartItem }) {
+function FlashDeals({ cartItem, addToCart }) {
     return (
         <>
             <section className="flash background">
@@ -10,7 +10,7 @@ function FlashDeals({ cartItem }) {
                         <i className="fa fa-bolt"></i>
                         <h1>Flash Deals</h1>
                     </div>
-                    <FlashCard cartItem={cartItem} />
+                    <FlashCard cartItem={cartItem} addToCart={addToCart} />
                 </div>
             </section>
         </>
