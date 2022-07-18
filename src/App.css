@@ -65,3 +65,94 @@ button {
 .boxShadow {
   box-shadow: rgb(43 52 69 / 10%) 0 4px 16px;
 }
+
+/* ----------Category------------------- */
+.contentWidth {
+  width: 77%;
+}
+.category {
+  width: 23%;
+  box-shadow: rgb(43 52 69 / 10%) 0 4px 16px;
+  height: 510px;
+  padding: 15px 0;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+.category .box {
+  transition: 0.5s;
+  padding: 0px 20px;
+}
+.category .box:hover {
+  background-color: #ffe1ef;
+  cursor: pointer;
+}
+.category img {
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+  object-fit: contain;
+}
+.category span {
+  margin: 10px 20px;
+  text-transform: capitalize;
+}
+/* ----------Category------------------- */
+.btn-primary {
+  background-color: #e94564;
+  padding: 13px 40px;
+  font-weight: bold;
+  border-radius: 5px;
+  color: #fff;
+  display: block;
+  letter-spacing: 0.6px;
+}
+.top {
+  margin-top: 80px;
+}
+.mtop {
+  margin-top: 40px;
+}
+.heading i {
+  color: #e94564;
+  margin: 10px;
+}
+
+/* ----------------Product================== */
+.product {
+  background-color: #fff;
+  padding: 20px;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: rgb(3 0 71 / 9%) 0 1px 3px;
+  margin: 10px;
+}
+.product h3 {
+  font-weight: 400;
+  font-size: 17px;
+}
+.product .rate i {
+  font-size: 15px;
+  color: #ffcd4e;
+  margin: 5px 5px 5px 0;
+}
+.product .price {
+  display: flex;
+  justify-content: space-between;
+  color: #e94560;
+}
+.product button {
+  background-color: none;
+  color: #e94560;
+  font-size: 20px;
+  border: 1px solid rgb(3 0 71 / 9%);
+  height: 35px;
+  width: 35px;
+  border-radius: 5px;
+  transition: 0.5s ease-in;
+}
+.product button:hover {
+  background-color: #e94560;
+  color: #fff;
+  cursor: pointer;
+}
+/* ----------------Product================== */
