@@ -53,6 +53,12 @@ button {
 .row {
   width: 50%;
 }
+.logo h1 {
+  color: #e94564;
+  font-weight: 700;
+  font-size: 1.8rem;
+  font-style: italic;
+}
 .icon-circle {
   width: 50px;
   height: 50px;
@@ -65,7 +71,17 @@ button {
 .boxShadow {
   box-shadow: rgb(43 52 69 / 10%) 0 4px 16px;
 }
-
+.discount {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #e94560;
+  padding: 3px 10px;
+  font-size: 12px;
+  border-radius: 50px;
+  color: #fff;
+  margin: 10px;
+}
 /* ----------Category------------------- */
 .contentWidth {
   width: 77%;
@@ -212,3 +228,28 @@ button {
   cursor: pointer;
 }
 /* ====================Control Button==================== */
+
+/* ====================Heading==================== */
+.heading .heading-left i {
+  font-size: 30px;
+}
+.heading .heading-left h2 {
+  font-size: 25px;
+  margin: 5px;
+}
+.heading .heading-right,
+.heading .heading-right i {
+  text-align: right;
+  color: gray;
+}
+/* ====================Heading==================== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 30px;
+}
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}

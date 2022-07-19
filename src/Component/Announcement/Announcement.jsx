@@ -1,0 +1,28 @@
+import React from 'react'
+
+function Announcement() {
+    const myStyle = {
+        width: "30%",
+        height: '340px'
+    }
+    const myStyle1 = {
+        width: "68%",
+        height: '340px'
+    }
+    return (
+        <>
+            <section className="annouc background">
+                <div className="container d-flex">
+                    <div className="img" style={myStyle}>
+                        <img src="../../images/banner-1.png" width='100%' height='100%' alt="" />
+                    </div>
+                    <div className="img" style={myStyle1}>
+                        <img src="../../images/banner-2.png" width='100%' height='100%' alt="" />
+                    </div>
+                </div>
+            </section>
+        </>
+    )
+}
+
+export default Announcement
